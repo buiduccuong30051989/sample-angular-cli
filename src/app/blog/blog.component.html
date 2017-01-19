@@ -1,0 +1,14 @@
+<div class="row wrap-blog-flex">
+   <div *ngFor="let blogcont of blogCont; let i = index" class="col-sm-6 col-md-4">
+      <div *ngIf=" i < 6" class="thumbnail">
+         <a href="{{blogcont.urlTitle}}">
+            <img src="{{blogcont.imgUrl}}">
+         </a>
+         <div class="caption">
+            <h3><a href = "{{blogcont.urlTitle}}">{{blogcont.title}}</a></h3>
+            <p class="card-description">{{blogcont.content}}</p>
+            <p><a href="{{blogcont.urlTitle}}" class="btn btn-primary" role="button">Read More</a></p>
+         </div>
+      </div>
+   </div>
+</div>
